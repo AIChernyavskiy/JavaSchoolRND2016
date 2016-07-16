@@ -1,8 +1,8 @@
-package com.company;
+package JavaSchoolRND2016.homework.July11.Task;
 
 import java.util.Scanner;
 
-public class Main {
+public class Task2012 {
 
     public static void main(String[] args) {
         System.out.println("Введите первую сторону первого прямоугольника");
