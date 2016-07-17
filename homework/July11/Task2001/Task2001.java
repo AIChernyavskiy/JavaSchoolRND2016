@@ -1,10 +1,10 @@
-package JavaSchoolRND2016.homework.July11.Task;
+package JavaSchoolRND2016.homework.July11.Task2001;
 
 import java.io.*;
 import java.util.Scanner;
 
 
-/* 2001. Заданы a и b. Выведите a+b
+/* 2001. Заданы a и b. Выведите a+b.
 Входные данные
 В единственной строке входных данных заданы целочисленные a и b (1 ≤ a,b ≤ 1000).
 */
@@ -12,7 +12,7 @@ import java.util.Scanner;
 public class Task2001 {
     public static void main(String[] args) throws  IOException {
 
-        File file = new File("src/JavaSchoolRND2016/homework/July11/FileText/input_2001.txt");
+        File file = new File("src/JavaSchoolRND2016/homework/July11/Task2001/input_2001.txt");
         //Проверяем есть ли файл
         if (!file.exists()) {
             System.out.println("Не удалось найти файл");
@@ -36,11 +36,11 @@ public class Task2001 {
                 }
             }
 
-            try (PrintWriter output = new PrintWriter("src/JavaSchoolRND2016/homework/July11/FileText/output_2001.txt")) {
+            try (PrintWriter output = new PrintWriter("src/JavaSchoolRND2016/homework/July11/Task2001/output_2001.txt")) {
                 output.print(summa);
             }
         } catch (FileNotFoundException exception) {
-            exception.printStackTrace(new PrintWriter("src/JavaSchoolRND2016/homework/July11/FileText/log.txt"));
+            exception.printStackTrace(new PrintWriter("src/JavaSchoolRND2016/homework/July11/Task2001/log.txt"));
             System.out.println("Файл не открыт");
         }
 
