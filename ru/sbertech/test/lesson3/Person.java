@@ -1,7 +1,7 @@
 package JavaSchoolRND2016.ru.sbertech.test.lesson3;
 
 
-public class Person {
+public class Person  implements  Comparable<Person>{
     long id;
     String name;
     String phoneNumber;
@@ -49,5 +49,10 @@ public class Person {
     @Override
     public int hashCode() {
         return (this.getId() + this.getName() + this.getPhoneNumber()).hashCode();
+    }
+
+    @Override
+    public int compareTo(Person o) {
+        return this.getPhoneNumber().compareTo(o.getPhoneNumber());
     }
 }
