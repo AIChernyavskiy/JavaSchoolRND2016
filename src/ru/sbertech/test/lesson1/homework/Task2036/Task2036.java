@@ -22,7 +22,7 @@ import java.util.Scanner;
 
 public class Task2036 {
     public static void main(String[] args) {
-        File file = new File("src/JavaSchoolRND2016/homework/July11/Task2036/input_2036.txt");
+        File file = new File("D:/JavaSchool/Task001/src/JavaSchoolRND2016/src/ru/sbertech/test/lesson1/homework/Task2036/input_2036.txt");
         //Проверяем есть ли файл
         if (!file.exists()) {
             System.out.println("Не удалось найти файл");
@@ -39,7 +39,7 @@ public class Task2036 {
 
         try {
             Scanner potok = new Scanner(file);
-            PrintWriter output = new PrintWriter("src/JavaSchoolRND2016/homework/July11/Task2036/output_2036.txt");
+            PrintWriter output = new PrintWriter("D:/JavaSchool/Task001/src/JavaSchoolRND2016/src/ru/sbertech/test/lesson1/homework/Task2036/output_2036.txt");
             try {
                 //Преобразовываем элемент из строки в число
                 n = Integer.parseInt(potok.nextLine());

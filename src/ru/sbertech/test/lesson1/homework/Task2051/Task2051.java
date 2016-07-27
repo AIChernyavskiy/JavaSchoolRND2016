@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class Task2051 {
 
     public static void main(String[] args) {
-        File file = new File("src/JavaSchoolRND2016/homework/July11/Task2051/input_2051.txt");
+        File file = new File("D:/JavaSchool/Task001/src/JavaSchoolRND2016/src/ru/sbertech/test/lesson1/homework/Task2051/input_2051.txt");
 
         //Проверяем есть ли файл
         if (!file.exists()) {
@@ -25,7 +25,7 @@ public class Task2051 {
 
         try {
             Scanner potok = new Scanner(file);
-            PrintWriter output = new PrintWriter("src/JavaSchoolRND2016/homework/July11/Task2051/output_2051.txt");
+            PrintWriter output = new PrintWriter("D:/JavaSchool/Task001/src/JavaSchoolRND2016/src/ru/sbertech/test/lesson1/homework/Task2051/output_2051.txt");
             slovo = potok.nextLine();
             String []brackets = slovo.split("");
             ArrayList ArrL = new ArrayList(brackets.length);

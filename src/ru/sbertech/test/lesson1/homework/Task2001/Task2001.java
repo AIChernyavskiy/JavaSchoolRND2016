@@ -12,7 +12,7 @@ import java.util.Scanner;
 public class Task2001 {
     public static void main(String[] args) throws  IOException {
 
-        File file = new File("src/homework/July11/Task2001/input_2001.txt");
+        File file = new File("D:/JavaSchool/Task001/src/JavaSchoolRND2016/src/ru/sbertech/test/lesson1/homework/Task2001/input_2001.txt");
         //Проверяем есть ли файл
         if (!file.exists()) {
             System.out.println("Не удалось найти файл");
@@ -36,11 +36,11 @@ public class Task2001 {
                 }
             }
 
-            try (PrintWriter output = new PrintWriter("src/homework/July11/Task2001/output_2001.txt")) {
+            try (PrintWriter output = new PrintWriter("D:/JavaSchool/Task001/src/JavaSchoolRND2016/src/ru/sbertech/test/lesson1/homework/Task2001/output_2001.txt")) {
                 output.print(summa);
             }
         } catch (FileNotFoundException exception) {
-            exception.printStackTrace(new PrintWriter("src/homework/July11/Task2001/log.txt"));
+            exception.printStackTrace();
             System.out.println("Файл не открыт");
         }
 

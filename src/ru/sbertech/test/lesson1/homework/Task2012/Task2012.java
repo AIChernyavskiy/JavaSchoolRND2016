@@ -18,7 +18,7 @@ import java.util.Scanner;
 public class Task2012 {
 
     public static void main(String[] args) {
-        File file = new File("src/JavaSchoolRND2016/homework/July11/Task2012/input_2012.txt");
+        File file = new File("D:/JavaSchool/Task001/src/JavaSchoolRND2016/src/ru/sbertech/test/lesson1/homework/Task2012/input_2012.txt");
         //Проверяем есть ли файл
         if (!file.exists()) {
             System.out.println("Не удалось найти файл");
@@ -61,17 +61,13 @@ public class Task2012 {
             if (max1==max2) otvet="YES";
                     else
                         otvet="NO";
-            try (PrintWriter output = new PrintWriter("src/JavaSchoolRND2016/homework/July11/Task2012/output_2012.txt")) {
+            try (PrintWriter output = new PrintWriter("D:/JavaSchool/Task001/src/JavaSchoolRND2016/src/ru/sbertech/test/lesson1/homework/Task2012/output_2012.txt")) {
                 output.print(otvet);
             }
         }
         //Обработка исключений
         catch (FileNotFoundException exception) {
-            try {
-                exception.printStackTrace(new PrintWriter("src/JavaSchoolRND2016/homework/July11/Task2012/log.txt"));
-            } catch (FileNotFoundException e) {
-                e.printStackTrace();
-            }
+            exception.printStackTrace();
             System.out.println("Файл не открыт");
         }
     }
