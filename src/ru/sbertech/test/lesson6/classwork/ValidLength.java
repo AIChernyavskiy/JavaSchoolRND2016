@@ -1,4 +1,4 @@
-package ru.sbertech.test.lesson6;
+package ru.sbertech.test.lesson6.classwork;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

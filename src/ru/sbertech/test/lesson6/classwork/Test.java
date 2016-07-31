@@ -1,9 +1,6 @@
-package ru.sbertech.test.lesson6;
+package ru.sbertech.test.lesson6.classwork;
 
 
-import com.sun.org.apache.xerces.internal.util.SynchronizedSymbolTable;
-
-import java.lang.reflect.Field;
 import java.lang.reflect.Proxy;
 import java.util.ArrayList;
 import java.util.List;
