@@ -1,8 +1,6 @@
-package ru.sbertech.test.lesson7;
+package ru.sbertech.test.lesson7.classwork;
 
 
-import java.lang.reflect.Method;
-import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLClassLoader;
 
@@ -12,11 +10,11 @@ public class Main {
         URLClassLoader urlClassLoader = new URLClassLoader(new URL[]{new URL("file:/J:/lecture7.Person.jar")},null);
 
 
-           /* Class<?> persClazz = urlClassLoader.loadClass("ru.sbertech.test.lesson7.Person");
+           /* Class<?> persClazz = urlClassLoader.loadClass("ru.sbertech.test.lesson7.classwork.Person");
             ((Person)(persClazz.newInstance())).info();
 
             */
-        Class<?> calcClazz = urlClassLoader.loadClass("ru.sbertech.test.lesson7.CalculatorImpl");
+        Class<?> calcClazz = urlClassLoader.loadClass("ru.sbertech.test.lesson7.classwork.CalculatorImpl");
         Calculator calculator = new CalculatorImpl();
         calculator.calc();
 
