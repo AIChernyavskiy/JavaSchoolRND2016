@@ -18,7 +18,7 @@ public class readContent {
         try {
             URL ur = new URL(url);
             InputStream ins = ur.openStream();
-            //Хак для вывода потока в строку
+            //Магия.
             Scanner sc = new Scanner (ins).useDelimiter("\\A");
                 String result = sc.hasNext() ? sc.next() : "";
             System.out.println(result);

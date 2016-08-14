@@ -1,4 +1,4 @@
-package ru.sbertech.test.lesson10;
+package ru.sbertech.test.lesson10.classwork;
 
 
 public class Apple {

@@ -1,4 +1,4 @@
-package ru.sbertech.test.lesson10;
+package ru.sbertech.test.lesson10.classwork;
 
 
 import java.util.Arrays;
