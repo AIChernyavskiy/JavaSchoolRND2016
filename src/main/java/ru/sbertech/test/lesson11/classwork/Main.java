@@ -1,4 +1,4 @@
-package ru.sbertech.test.lesson11;
+package ru.sbertech.test.lesson11.classwork;
 
 
 public class Main {
@@ -16,8 +16,8 @@ public class Main {
         t3.setPriority(Thread.MAX_PRIORITY);
 
         t1.start();
-        t3.start();
         t2.start();
+        t3.start();
 
     }
 }

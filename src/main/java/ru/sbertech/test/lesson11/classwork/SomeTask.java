@@ -1,7 +1,5 @@
-package ru.sbertech.test.lesson11;
+package ru.sbertech.test.lesson11.classwork;
 
-
-import java.util.TreeMap;
 
 public class SomeTask implements Runnable {
     @Override
