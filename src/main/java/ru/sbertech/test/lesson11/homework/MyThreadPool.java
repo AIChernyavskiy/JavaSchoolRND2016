@@ -29,17 +29,10 @@ class ThreadPool implements Runnable {
 
     @Override
     public void run() {
-        try {
             for (int i = firstIndex; i < lastIndex; i++) {
                 sumCharElement += stringList.get(i).replaceAll("[^a-zA-Z]", "").length();
 
             }
-
-        } catch (IndexOutOfBoundsException e) {
-            e.printStackTrace();
-            System.out.println("Мы ожидали это исключение");
-        }
-
         System.out.println("Часть с " + firstIndex + " по " + lastIndex + " мы посчитали с помощью потока " + Thread.currentThread().getName());
 
     }
