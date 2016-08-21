@@ -1,7 +1,5 @@
-package ru.sbertech.test.lesson11_2;
+package ru.sbertech.test.lesson11_2.classwork;
 
-
-import java.util.Date;
 
 public class Main {
 

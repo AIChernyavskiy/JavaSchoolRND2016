@@ -1,4 +1,4 @@
-package ru.sbertech.test.lesson11_2;
+package ru.sbertech.test.lesson11_2.classwork;
 
 
 public class Account implements  Runnable {
@@ -11,7 +11,7 @@ public class Account implements  Runnable {
         return saldo;
     }
 
-    private int saldo;
+    private  int saldo;
 
     public Account(int saldo) {
         this.saldo = saldo;

@@ -1,4 +1,4 @@
-package ru.sbertech.test.lesson11_2;
+package ru.sbertech.test.lesson11_2.classwork;
 
 
 public class MonitorExample implements Runnable {
