@@ -22,6 +22,11 @@ public class Client {
 
     private void run() {
         new Thread(new Listner()).start();
+        try {
+            Thread.currentThread().join(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         while (!socket.isClosed()) {
             System.out.println("Enter you message: ");
             String userString = null;
@@ -63,12 +68,13 @@ public class Client {
                     lineFromServer = bufferedReader.readLine();
                     if (lineFromServer != null) {
                         System.out.println("Сервер прислал: "+ lineFromServer);
-                    } else {
+                    } else if (lineFromServer == null) {
                         socket.close();
                     }
 
                 } catch (IOException e) {
                     System.out.println("Отключаюсь...."+e);
+                    Thread.currentThread().interrupt();
                 }
             }
         }

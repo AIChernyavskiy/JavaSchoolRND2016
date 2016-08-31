@@ -41,7 +41,9 @@ public class Server {
                 } catch (IOException e) {
                     System.out.println("Не удалось создать клиента "+e);
                 }
-                new Thread(clients.get(i)).start();
+                Thread thread = new Thread(clients.get(i));
+                thread.setDaemon(true);
+                thread.start();
                 i++;
             }
         }
@@ -79,8 +81,8 @@ public class Server {
             synchronized (clients) {
                 if (clients.size()>=3) {
                     send("Сервер превысил кол-во клиентов, попробуйте чуть позже.");
-                    send(null);
                     close();
+                    //send("");
                 }
             }
 
@@ -105,8 +107,12 @@ public class Server {
             if (!socket.isClosed()) {
                 try {
                     socket.close();
+                    bufferedReader.close();
+                    bufferedWriter.close();
                 } catch (IOException ignored) {}
             }
+
+            i--;
         }
 
     }
