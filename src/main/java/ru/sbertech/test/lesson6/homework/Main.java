@@ -3,6 +3,7 @@ package ru.sbertech.test.lesson6.homework;
 
 import java.lang.reflect.*;
 
+
 /*
 Вывести на консоль все методы класса, включая все родительские методы (включая приватные).
 Вывести все геттеры класса.

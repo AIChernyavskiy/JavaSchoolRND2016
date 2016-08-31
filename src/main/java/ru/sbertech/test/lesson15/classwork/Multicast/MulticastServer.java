@@ -1,4 +1,4 @@
-package ru.sbertech.test.lesson15.Multicast;
+package ru.sbertech.test.lesson15.classwork.Multicast;
 
 import java.io.IOException;
 import java.net.DatagramPacket;

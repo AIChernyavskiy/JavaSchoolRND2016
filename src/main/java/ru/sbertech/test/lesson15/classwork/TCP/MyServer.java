@@ -1,10 +1,9 @@
-package ru.sbertech.test.lesson15;
+package ru.sbertech.test.lesson15.classwork.TCP;
 
 
 import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
-import java.util.Date;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 

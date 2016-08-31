@@ -1,4 +1,4 @@
-package ru.sbertech.test.lesson11_4.Latch;
+package ru.sbertech.test.lesson11_4.classwork.Latch;
 
 
 import java.util.concurrent.CountDownLatch;

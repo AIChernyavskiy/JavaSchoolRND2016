@@ -1,4 +1,4 @@
-package ru.sbertech.test.lesson15.UDP;
+package ru.sbertech.test.lesson15.classwork.UDP;
 
 
 import java.io.IOException;

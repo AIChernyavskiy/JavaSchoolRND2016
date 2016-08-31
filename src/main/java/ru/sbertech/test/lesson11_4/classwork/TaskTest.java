@@ -1,4 +1,4 @@
-package ru.sbertech.test.lesson11_4;
+package ru.sbertech.test.lesson11_4.classwork;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;

@@ -1,4 +1,4 @@
-package ru.sbertech.test.lesson11_4;
+package ru.sbertech.test.lesson11_4.classwork;
 
 
 public class Task implements Runnable {

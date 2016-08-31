@@ -1,4 +1,4 @@
-package ru.sbertech.test.lesson11_4.Lock;
+package ru.sbertech.test.lesson11_4.classwork.Lock;
 
 import java.util.Map;
 import java.util.concurrent.locks.Lock;

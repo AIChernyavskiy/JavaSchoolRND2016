@@ -1,4 +1,4 @@
-package ru.sbertech.test.lesson11_4.FutureTask;
+package ru.sbertech.test.lesson11_4.classwork.FutureTask;
 
 import java.util.concurrent.Callable;
 import java.util.concurrent.FutureTask;

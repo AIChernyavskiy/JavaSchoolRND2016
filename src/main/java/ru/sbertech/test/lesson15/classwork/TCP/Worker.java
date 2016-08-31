@@ -1,4 +1,4 @@
-package ru.sbertech.test.lesson15;
+package ru.sbertech.test.lesson15.classwork.TCP;
 
 
 import java.io.*;

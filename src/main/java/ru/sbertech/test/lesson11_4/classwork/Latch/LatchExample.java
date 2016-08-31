@@ -1,8 +1,8 @@
-package ru.sbertech.test.lesson11_4.Latch;
+package ru.sbertech.test.lesson11_4.classwork.Latch;
 
 
-import static ru.sbertech.test.lesson11_4.Latch.P4_Main.endGate;
-import static ru.sbertech.test.lesson11_4.Latch.P4_Main.startGate;
+import static ru.sbertech.test.lesson11_4.classwork.Latch.P4_Main.endGate;
+import static ru.sbertech.test.lesson11_4.classwork.Latch.P4_Main.startGate;
 
 public class LatchExample implements Runnable {
     public void run() {
