@@ -1,4 +1,4 @@
-package ru.sbertech.test.lesson19.Observer;
+package ru.sbertech.test.lesson19.classwork.Observer;
 
 
 import java.util.ArrayList;
