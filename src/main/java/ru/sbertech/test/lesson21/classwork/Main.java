@@ -1,4 +1,4 @@
-package ru.sbertech.test.lesson21;
+package ru.sbertech.test.lesson21.classwork;
 
 import java.sql.*;
 
