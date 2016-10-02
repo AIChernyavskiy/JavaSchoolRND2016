@@ -1,0 +1,26 @@
+create table CLIENTS (
+id_client int(10) AUTO_INCREMENT,
+name varchar(1000) NOT NULL,
+PRIMARY KEY (id_client)
+);
+
+create table ACCOUNTS (
+id_account int(10) AUTO_INCREMENT,
+saldo number(10,2),
+accNum varchar(1000) NOT NULL,
+client_id int(10) NOT NULL,
+PRIMARY KEY (id_account),
+FOREIGN KEY (client_id) REFERENCES CLIENTS (id_client)
+);
+
+create table DOCUMENTS (
+id_document int(10) AUTO_INCREMENT,
+accDT int(10),
+accCT int(10),
+summa number(10,2),
+purpose varchar(1000),
+docDate date,
+PRIMARY KEY (id_document),
+FOREIGN KEY (accDT) REFERENCES ACCOUNTS (id_account),
+FOREIGN KEY (accCT) REFERENCES ACCOUNTS (id_account)
+);
