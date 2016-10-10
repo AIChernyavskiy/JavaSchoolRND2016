@@ -41,6 +41,25 @@ public class Account {
         this.client = client;
     }
 
+    public boolean checkSaldo(BigDecimal summa) {
+        int equals = saldo.compareTo(summa);
+        if (equals >= 0) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public BigDecimal getSaldoAfterTransactionCT(BigDecimal summa) {
+        saldo = saldo.subtract(summa);
+        return saldo;
+    }
+
+    public BigDecimal getSaldoAfterTransactionDT(BigDecimal summa) {
+        saldo = saldo.add(summa);
+        return saldo;
+    }
+
     @Override
     public String toString() {
         return "Account{" +

@@ -76,7 +76,7 @@ public class AccountDAOImpl implements AccountDAO {
                 account.setSaldo(resultSet.getBigDecimal(2));
                 account.setAccNum(resultSet.getString(3));
                 ClientDaoImpl clientDao = (ClientDaoImpl) applicationContext.getBean("ClientDaoImpl");
-                Client client = clientDao.getClientById(resultSet.getInt(1));
+                Client client = clientDao.getClientById(resultSet.getInt(4));
                 account.setClient(client);
                 return account;
             }
@@ -97,7 +97,7 @@ public class AccountDAOImpl implements AccountDAO {
                 account.setSaldo(resultSet.getBigDecimal(2));
                 account.setAccNum(resultSet.getString(3));
                 ClientDaoImpl clientDao = (ClientDaoImpl) applicationContext.getBean("ClientDaoImpl");
-                Client client = clientDao.getClientById(resultSet.getInt(1));
+                Client client = clientDao.getClientById(resultSet.getInt(4));
                 account.setClient(client);
                 return account;
             }

@@ -1,7 +1,10 @@
 package ru.sbertech.test.lesson22;
 
+import javax.persistence.*;
+
 
 public class Client {
+
     long id;
     String name;
 

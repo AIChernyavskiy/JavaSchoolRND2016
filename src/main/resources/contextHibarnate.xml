@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+
+    <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="org.h2.Driver" />
+        <property name="url" value="jdbc:h2:~/test"/>
+        <property name="username" value="sa"/>
+        <property name="password" value=""/>
+    </bean>
+
+    <bean id="sessionFactory"
+          class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+        <property name="dataSource" ref="dataSource" />
+        <property name="configLocation">
+            <value>hibernate.cfg.xml</value>
+        </property>
+        <property name="hibernateProperties">
+            <props>
+                <prop key="hibernate.show_sql">true</prop>
+                <prop key="hibernate.dialect">org.hibernate.dialect.H2Dialect</prop>
+                <prop key="hibernate.connection.charSet">UTF-8</prop>
+            </props>
+        </property>
+    </bean>
+
+    <bean id="ClientDaoImpl" class="ru.sbertech.test.lesson25.DAO.ClientDaoImpl">
+        <property name="sessionFactory" ref="sessionFactory" />
+    </bean>
+    <bean id="AccountDAOImpl" class="ru.sbertech.test.lesson25.DAO.AccountDAOImpl">
+        <property name="sessionFactory" ref="sessionFactory" />
+    </bean>
+    <bean id="DocumentDaoImpl" class="ru.sbertech.test.lesson25.DAO.DocumentDaoImpl">
+        <property name="sessionFactory" ref="sessionFactory" />
+    </bean>
+
+    <bean id="Client" class = "ru.sbertech.test.lesson25.Client" scope="prototype" />
+    <bean id="Account" class = "ru.sbertech.test.lesson25.Account" scope="prototype" />
+    <bean id="Document" class = "ru.sbertech.test.lesson25.Document" scope="prototype" />
+
+
+</beans>
